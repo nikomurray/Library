@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(27, 27, 75);
+    word-wrap: break-word;
+    margin-bottom: 100px;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+button,
+input {
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+input[type='submit'] {
+    cursor: text;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 40px;
+    border-bottom: dashed #bdbdbd 1px;
+}
+
+.button-field {
+    padding: 20px;
+    text-align: center;
+}
+
+.button-field button {
+    color: #000;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: rgb(204, 204, 204);
+    border-radius: 50%;
+    padding: 7px 17px;
+    transition: all 0.4s;
+}
+
+.button-field button:hover {
+    background-color: rgb(250, 250, 250);
+    transform: rotate(360deg);
+}
+
+
+/* LIBRARY */
+.library-field {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.library-field .book {
+    border-radius: 10px;
+    padding: 30px 0;
+    background: rgb(69, 9, 134);
+    background: -moz-linear-gradient(180deg, rgba(69, 9, 134, 1) 0%, rgba(23, 39, 157, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(69, 9, 134, 1) 0%, rgba(23, 39, 157, 1) 100%);
+    background: linear-gradient(180deg, rgba(69, 9, 134, 1) 0%, rgba(23, 39, 157, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#450986", endColorstr="#17279d", GradientType=1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: solid #000 1px;
+    box-shadow: -5px 5px 2px #00000097;
+}
+
+.library-field p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.library-field p:first-child {
+    font-size: 1.4rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.library-field p:nth-child(3) {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.library-field .remove-book-btn {
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+.library-field .remove-book-btn:hover {
+    opacity: 1;
+}
+
+.library-field .read-btn {
+    font-size: 1.2rem;
+}
+
+/* FORM */
+.form-container {
+    z-index: 2;
+    box-shadow: 0 0 0 100vmax #00000059, -5px 5px 3px #000000;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 300px;
+    height: 400px;
+    background-color: rgb(33, 31, 119);
+    transition: all 0.4s;
+    border-radius: 10px;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form .field {
+    border-bottom: solid #949494 1px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form .field:hover {
+    border-bottom: solid #ffffff 1px;
+}
+
+form input {
+    text-align: left;
+    font-size: 1rem;
+}
+
+form label {
+    margin-right: 8px;
+    color: #949494;
+}
+
+form .submit-field {
+    text-align: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+form .submit-field input {
+    cursor: pointer;
+}
+
+form .close-form-btn {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    text-decoration: underline;
+}
+
+.active {
+    transform: translate(-50%, -50%) scale(1);
+}

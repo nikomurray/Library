@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Library</h1>
+
+        <div class="button-field"><button id="addBookBtn">+</button></div>
+
+        <div class="library-field" id="libraryField">
+            <!-- <div class="book">
+                <p>Title</p>
+                <p>Author</p>
+                <p>### Pages</p>
+                <button class="read-btn" id="readBtn">Read</button>
+                <button class="remove-book-btn" id="removeBookBtn">Remove</button>
+            </div> -->
+        </div>
+
+        <div class="form-container" id="formContainer">
+            <form action="" name="form" id="form" autocomplete="off">
+                <div class="field"><input type="text" placeholder="Title" maxlength="30" required id="titleInput"></div>
+                <div class="field"><input type="text" placeholder="Author" maxlength="30" required id="authorInput"></div>
+                <div class="field"><input type="number" placeholder="Pages" min="1" required id="pagesInput"></div>
+                <div class="field"><label for="readBtnInput">Have you read it?</label><input type="checkbox" id="readInput"></div>
+                <div class="field submit-field"><input type="submit" value="Add Book"></div>
+                <button class="close-form-btn" id="closeFormBtn">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
